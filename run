@@ -1,0 +1,18 @@
+#!/bin/sh
+echo "Compile and analyze the 'first' app ..."
+mkdir -p first_app/ebin
+erlc +debug_info -o first_app/ebin/ first_app/src/bad_behaviour.erl first_app/src/good_behaviour.erl
+erlc +debug_info -pa first_app/ebin -o first_app/ebin/ first_app/src/good_child.erl
+dialyzer --build_plt --output_plt dialyzeit.plt first_app/ebin/*.beam
+dialyzer --plt dialyzeit.plt first_app/ebin/
+echo ""
+echo "Above this line you should see a warning about the inferred return type of bad/0"
+echo ""
+echo "Compile and analyze the 'second' app ..."
+echo ""
+mkdir -p second_app/ebin
+erlc +debug_info -pa first_app/ebin -o second_app/ebin/ second_app/src/bad_child.erl
+dialyzer --plt dialyzeit.plt second_app/ebin/
+echo ""
+echo "Above this line you should see the same warning, but instead you get one about"
+echo "bad_behaviour behaviour not being available"

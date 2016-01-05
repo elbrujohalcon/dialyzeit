@@ -1,0 +1,9 @@
+{
+  application, first,
+  [
+   {description, "This app 'works'"},
+   {vsn, "0.0.0"},
+   {applications, [kernel, stdlib]},
+   {modules, []}
+  ]
+}.

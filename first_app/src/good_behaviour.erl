@@ -1,3 +1,3 @@
--module(di_good).
+-module(good_behaviour).
 
 -callback good() -> good.

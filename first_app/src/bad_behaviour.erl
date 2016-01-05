@@ -1,4 +1,4 @@
--module(di_bad).
+-module(bad_behaviour).
 
 -callback bad() -> bad.
 
