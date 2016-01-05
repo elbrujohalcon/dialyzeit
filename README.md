@@ -25,7 +25,7 @@ I'm not 100% sure how this problem is generated or why, but the important things
 - the function with the same name as the callback must be **not exported**. If you export it, everything works fine.
 
 ### In Real-Life
-If you wanted a taste of this in an actual _real-life_ project, try to implement `egithub_webhook` behaviour from [erlang-github](https://github.com/inaka/erlang-github) in your project using a release older than inaka/erlang-github#76 (i.e. older than 0.1.19).
+If you want a taste of this in an actual _real-life_ project, try to implement `egithub_webhook` behaviour from [erlang-github](https://github.com/inaka/erlang-github) in your project using a release older than inaka/erlang-github#76 (i.e. older than 0.1.19).
 
 ### Watch it happen!
 There are 2 ways to see this thing happening in this very repo:
