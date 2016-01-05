@@ -1,0 +1,13 @@
+{
+  application, dialyzeit,
+  [
+   {description, "Weird dialyzer samples"},
+   {vsn, "0.0.0"},
+   {applications, [kernel, stdlib]},
+   {modules, []},
+   {maintainers, ["elbrujohalcon"]},
+   {licenses, []},
+   {links, [{"Github", "https://github.com/elbrujohalcon/dialyzeit"}]},
+   {build_tools, ["make"]}
+  ]
+}.
