@@ -1,6 +1,13 @@
 # dialyzeit
 Weird dialyzer behaviour samples
 
+---
+
+## IT WAS FIXED!
+This issue was fixed by [@aronisstav](https://github.com/aronisstav) [here](https://github.com/erlang/otp/pull/934)
+
+---
+
 ## A bad behaviour in the PLT
 
 ### Symptoms
